@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1.打印0-20之间的整数，将每个数输出到控制台
+        // let i = 0
+        // while (i <= 20) {
+        //     document.write(`这是数字${i}<br>`)
+        //     i++
+        // }
+
+        //2.计算1-1000之间的累加和
+        // let i = 0
+        // let sum = 0
+        // while (i <= 1000) {
+        //     sum += i
+        //     i++                 
+        // }
+        // document.write(`数字和为${sum}`)
+
+        //3.页面一次打印100-200之间，可以被6整除的数字
+        // let i = 100
+        // while (i <= 200) {
+        //     if (i % 6 === 0) {
+        //         document.write(`数字有：${i}<br>`)
+        //     }
+        //     i++
+        // }
+
+        //4.用户弹窗输入两个数字，页面输出两个数字中的最大值（请使用三元运算符完成）
+        // let num1 = +prompt('请输入第一个数字：')
+        // let num2 = +prompt('请输入第二个数字：')
+        // document.write( num1 >= num2 ? `最大的数字当然是${num1}` : `最大的数字当然是${num2}`)
+
+        //5.用户输入一个数，计算1到这个数的累加和
+        //比如用户输入的是5，则计算1~5之间的累加和
+        // let num1 = +prompt('请输入数字：')
+        // let i = 0
+        // let sum = 0
+        // while (i <= num1) {
+        //     sum += i
+        //     i++          
+        // }
+        // document.write('累加和为：', sum)  
+
+        //6.输出成绩案例（请使用if多分支来书写程序）
+        //接收用户输入的分数，根据分数输出对应的等级字母 A、B、C、D、E，
+        //90分(含)以上 ，输出：A；80分(含)~ 90 分(不含)，输出：B；70分(含)~ 80 分(不含)，输出：C ；60分(含)~ 70 分(不含)，输出：D；60分(不含) 以下，输出 E
+        // let num1 = +prompt('请输入你的成绩：')
+        // if(num1 >= 90) {
+        //     document.write('你的等级是A')
+        // }else if(num1 >= 80){
+        //     document.write('你的等级是B')
+        // }else if(num1 >= 70){
+        //     document.write('你的等级是C')
+        // }else if(num1 >= 60){
+        //     document.write('你的等级是D')
+        // }else {
+        //     document.write('你的等级是E')
+        // }
+
+        //7.输出星期练习（请使用switch分支语句来书写程序）
+        //题目描述：请用户输入1个星期数. 就将对应的英文的星期打印出来：
+        // 比如用户输入'星期一'， 则 页面可以打印  monday 
+        // let time = prompt('请输入今天是星期几？')
+        // switch (time) {
+        //     case '星期一':
+        //         document.write('Monday')
+        //         break;
+        //     case '星期二':
+        //         document.write('Tuesday')
+                    // break;
+        //     case '星期三':
+        //         document.write('Wednesday')
+                    // break;
+        //     case '星期四':
+        //         document.write('Thursday')
+                    // break;
+        //     case '星期五':
+        //         document.write('Friday')
+                    // break;
+        //     case '星期六': 
+        //         document.write('Saturday')
+                    // break;
+        //     case '星期日':
+        //         document.write('Sunday')
+                    // break;
+        //     default:
+        //         document.write('请输入正确的时间，如星期一，星期二，星期三等！！！')
+        //         break;
+        // }
+
+        //8.用户登录验证：接收用户输入的用户名和密码，
+        // 若用户名为 “admin” ,且密码为 “123456” ,则提示用户登录成功!  否则，让用户一直输入。
+        // while (true) {
+        //     let uname = prompt('请输入你的用户名：')
+        //     let passwd = prompt('请输入你的密码：')
+        //         if( uname === 'admin' && passwd === '123456'){
+        //             document.write('登录成功！')
+        //             break;
+        //         }
+        //         continue
+        // }
+
+        //综合案例变形
+        //需求：根据用户选择计算两个数的结果：
+        //题目描述：打开页面出现一个提示框，注意是一直提示的，'请您选择 + - * / ，如果输入q，则是退出结束程序      
+//         while (true){
+//             let chosen = prompt(`1.输入+、-、*、/计算两个数字的结果
+// 2.如果输入q则是退出`)
+//             if(chosen === 'q') {
+//                 break;
+//         }else if(chosen === '+' || chosen === '-' || chosen === '*' || chosen === '/'){
+//             let num1 = +prompt('请您输入第一个数字：')
+//             let num2 = +prompt('请您输入第二个数字：')
+//             let sum = 0
+//             switch (chosen) {
+//                 case '+':
+//                     sum = num1 + num2
+//                     alert(`您计算的求和结果是：${sum}`)
+//                     break;
+//                 case '-':
+//                     sum = num1 - num2
+//                     alert(`您计算的相减结果是：${sum}`)
+//                     break;
+//                 case '*':
+//                     sum = num1 * num2
+//                     alert(`您计算的相乘结果是：${sum}`)
+//                     break;
+//                 case '/':
+//                     sum = num1 / num2
+//                     alert(`您计算的相除结果是：${sum}`)
+//                     break;
+//                 default:
+//                     break;
+//             }
+
+//         }
+//     }
+
+        //排错题1
+         // 需求： 求用户输入2个数字的和
+        // let num1 = +prompt('请输入第一个值')
+        // let num2 = +prompt('请输入第二个值')
+        // alert(num1 + num2)
+
+        //排错题2
+        // 判断用户名的案例，用户会输入用户名
+        // 1. 如果用户名输入'迪丽热巴'，则页面弹出 '用户名输入正确'
+        // 2. 如果用户名输入不是'迪丽热巴'，否则弹出'用户名输入不正确'
+        // let username = prompt('请输入用户名:')
+        // if (username === '迪丽热巴') {
+        //     alert('用户名输入正确')
+        // } else {
+        //     alert('用户名输入不正确')
+        // }
+
+        //排错题3
+        // 需求，用户输入1~10之间的整数，则循环打印用户输入的次数
+        // 注意此处有2个错误，找出并且修正
+        // let num = +prompt('请输入一个1~10之间的整数')
+        // let i = 1
+        // while (i < num) {
+        //     console.log(`我是第${i}句话`)
+        //     i++
+        // }
+
+        //排错题4
+        // 需求： 用户输入1~4之间整数，对应输出 '春' '夏' '秋' '冬' 
+        // 例如用户输入 1 则输出 '春' ，用户输入 2，则输出 '夏' 以此类推
+        // 注意： 此处有2个错误，找出并且修正
+        let num = prompt('请你输入一个1-4之间的值')
+        switch (num) {
+            case '1':
+                alert('春')
+                break;
+            case '2':
+                alert('夏')
+                break;
+            case '3':
+                alert('秋')
+                break;
+            case '4':
+                alert('冬')
+                break;
+            default:
+                prompt('请输入1~4之间整数')
+                break;
+        }
+
+    </script>
+</body>
+
+</html>

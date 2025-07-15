@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1.if语句
+        //单分支语句
+        // if (true) {
+        //     console.log('执行语句')      
+        // }
+        //除了0之外，所有的语句都为真
+        // if (2) {
+        //     console.log('执行语句')    
+        // }
+        //除了空字符串‘’之外，所有的语句都为真
+        // if ("pink老师") {
+        //         console.log('执行语句')
+        //     }
+
+/*        //if语句：单分支课堂案例1：
+        //用户输入高考成绩，如果分数大于700，则提示恭喜考入黑马程序员
+        //1.用户输入高考成绩
+        // let num = +prompt('请输入你的高考成绩：')
+        //2.判断成绩并给出提示
+        // if (num >= 700){
+            // document.write('恭喜考入重庆邮电大学')
+        // }
+*/        
+
+        //双分支语句
+/*        //判断用户登录案例
+        //需求：用户输入，用户名：pink，密码：123456，则提示登录成功，否则提示登录失败
+        //分析：弹出输入框，分别输入用户名和密码；通过if语句判断，如果用户名是pink,并且密码是123456，则执行if里面的语句，否则执行else里面的语句。
+        //1.用户输入用户名和密码
+        let uname = prompt('请输入你的用户名：')
+        let passwd = prompt('请输入密码：')
+        //2.判断用户输入的是否正确并弹出提示信息
+        if (uname === 'pink' && passwd === '123456') {
+            alert('登录成功！')
+        } else 
+        {
+            alert('登录失败！')
+        }
+*/ 
+
+/*       //判断闰年案例
+        //需求：让用户输入年份，判断这一年是闰年还是平年并弹出对应的警戒框
+        //1.用户输入年份
+        let year = +prompt('请输入年份：')
+        //判断年份并弹出警戒信息
+        if (year % 4 === 0 && year % 100 !== 0 || year % 400 === 0) {
+            alert(`${year}年是闰年`)
+        } else {
+            alert(`${year}年是平年`)
+        }
+*/ 
+
+        //多分支语句
+/*       //输入成绩案例
+        //需求：根据输入不同的成绩，反馈不同的评价
+        //90分以上是优秀，70~90分是良好，60~70分是及格，60分以下是不及格
+        //1.用户输入成绩
+        let score = +prompt('请输入你的成绩：')
+        //2.判断成绩的等级并反馈相应的信息
+        if (score >= 90) {
+            alert(`${score}分是优秀等级`)
+        } else if (score >= 70) {
+            alert(`${score}分是良好等级`)
+        } else if (score >= 60) {
+            alert(`${score}分是及格等级`)
+        } else {
+            alert(`${score}分是不及格等级`)
+        }
+*/ 
+        
+        //三元运算符
+        //条件 ？ 满足条件执行的代码 ： 不满足条件执行的代码
+        // console.log(5 > 2 ? "5当然是最大的数字" : "5才不是最大的数字")
+        
+/*        //判断2个数的最大值
+        //需求：用户输入2个数，控制台输出最大值
+        //1.用户输入2个数
+        // let num1 = +prompt('请输入第一个数字：')
+        // let num2 = +prompt('请输入第二个数字：')
+        //2.判断两个数的最大值并给出判断信息
+        // console.log(num1 > num2 ? `最大的数字当然是${num1}` : `最大的数字当然是${num2}`)
+*/        
+
+/*        //数字补0案例
+        //需求：用户输入1个数，如果数字小于10，则前面进行补0，比如09 03等
+        //1.用户输入一个整数
+        // let num1 = +prompt('请输入一个整数：')
+        //2.判断数字是否需要补0，并给出正确的输出
+        // alert(num1 > 9 ? `该数字为${num1}` : `该数字为${'0' + num1}`)
+*/
+
+
+/*        //switch语句
+        //简单计算器案例
+        //需求:用户输入2个数字，然后输入+ - * / 任何一个，可以计算结果
+        //1.用户输入2个数字及运算符
+        let num1 = +prompt('请输入第一个数字：')
+        let num2 = +prompt('请输入第二个数字：')
+        let sp = prompt('请输入运算符：')
+        //2.进行计算输出结果
+        switch (sp) {
+            case '+':
+                alert(num1 + num2)
+                break
+            case '-':
+                alert(num1 - num2)
+                break
+            case '*': 
+                alert(num1 * num2) 
+                break
+            case '/': 
+                alert(num1 / num2)
+                break
+            default:
+                alert('你在干什么？请输入正确的运算符！！！')
+        }
+*/
+
+        //断点调试
+        // let num1 = prompt('请输入第一个值')
+        // let num2 = prompt('请输入第二个值')
+        // let num = num1 - num2
+        // console.log(num)
+        
+
+        //while循环
+        // let num = 0
+        // while (num < 5) {
+        //     document.write('我学的很棒！')
+        //     num++            
+        // }
+
+/*        //案例：在页面中打印输出10句“月薪过万”
+        //需求：使用while循环，页面中打印，可以添加换行"<br>"效果
+        //1.让用户输入打印输出的个数
+        let num = +prompt('请输入打印的次数：')
+        let i = 0
+        //2.循环打印
+        while ( i < num) {
+            document.write('月薪过万<br>')
+            i++
+        }
+*/ 
+
+        //While练习
+        //需求：使用while循环，页面中打印，可以添加换行效果
+        //1.页面输出1-100
+        // let num = 1
+        // while (num <= 100) {
+        //     document.write(`数字${num}<br>`)
+        //     num++
+        // }
+        // document.write(`和为${num1}<br>`)
+        //2.计算从1加到100的总和并输出
+        // let i = 1
+        // let sum = 0
+        // while (i <= 100) {
+        //     sum += i
+        //     i++
+        //     document.write(`数字和为${sum}<br>`)
+        // }
+        //3.计算1-100之间的所有偶数和
+        // let i = 0
+        // let sum = 0
+        // while (i <= 100) {
+        //     sum += i
+        //     i += 2
+        //     document.write(`偶数和为${sum}<br>`)
+        // }
+
+
+/*        //页面弹框
+        //需求：页面弹出对话框，‘你爱我吗’，如果输入‘爱’，则结束，否则一直弹出对话框
+        while (true) {
+            let str = prompt('你爱我吗？')
+            if (str === '爱') { //这里的===非常重要
+                break
+            }
+            // continue
+            // let str = prompt('你爱我吗？')
+    }
+*/
+
+        //简易ATM取款机案例
+        //需求：用户可以选择存钱，取钱，查看余额和退出功能
+        //1.开始循环
+        //3.准备一个总金额 放在循环外面，避免循环重置
+        let money = 100
+        while (true) {
+            let re = +prompt(`
+                请你选择操作：
+                1.存钱
+                2.取钱
+                3.查看余额
+                4.退出
+                `)
+            //2.如果用户输入4，则退出循环，break
+            if (re === 4) {
+                break                    
+            }
+            //4.根据输入做操作
+            switch (re) {
+                case 1:
+                    //存钱
+                    let cun = +prompt('请输入要存款的金额：')
+                    money = money + cun
+                    alert(`目前的余额为：${money}`)
+                    break;
+                case 2:
+                    //取钱
+                    let take = +prompt('请输入要取出的金额：')
+                    if (take <= money) {
+                        money -= take
+                        alert(`目前的余额为：${money}`)
+                    } else {
+                        alert(`您目前的余额不足，仅剩${money}`)
+                    }
+                    case 3:
+                        alert(`您目前的余额为：${money}`)
+                default:
+                    alert('请输入正确的操作：')
+                    break;
+            }
+
+        }
+
+        //
+
+
+
+
+    </script>
+</body>
+</html>
